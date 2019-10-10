@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Survey</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Form</h1>
+
+        <form action='/result' method='post'>
+            <div class="form-group">
+                Name: <input type='text' name='name'>
+            </div>
+            <div class="form-group">
+                Location:
+                <select name="location">
+                    <option value='san_jose'>San Jose</option>
+                    <option value='seattle'>Seattle</option>
+                    <option value='dallas'>Dallas</option>
+                    <option value='boise'>Boise</option>
+                    <option value='orange_county'>Orange County</option>
+                </select>
+            </div>
+            <div class="form-group">
+                Favorite Language:
+                <select name="language">
+                    <option value='html'>Html</option>
+                    <option value='python'>Python</option>
+                    <option value='java'>Java</option>
+                    <option value='swift'>Swift</option>
+                    <option value='english'>English</option>
+                </select>
+            </div>
+            <div class="form-group">
+                Comments (optional): <textarea name="box" class="form-control" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <input type='submit' value='Submit'>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
